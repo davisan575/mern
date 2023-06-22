@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const skillProfileSchema = new mongoose.Schema({
     user: {
-        type: mongoose.schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'User'
     },
@@ -11,7 +11,7 @@ const skillProfileSchema = new mongoose.Schema({
         default: "Unknown"
     }],
     Skills: [{
-        type: mongoose.schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         default: "N/A",
         ref: 'Skill'
 
